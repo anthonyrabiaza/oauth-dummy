@@ -1,0 +1,12 @@
+#%RAML 0.8
+title: Dummy API
+baseUri: http://localhost:8081/api
+
+/customer/{id}/{data}: 
+  get:
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example: |
+              {"msg" : "good"}
